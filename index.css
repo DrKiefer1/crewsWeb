@@ -1,0 +1,89 @@
+
+body {
+	background-color: rgb(255, 255, 255);
+}
+.title {
+	
+             font-family: Garamond, 'Times New Roman',Arial,Georgia;
+             font-size: 40px;
+             color: rgb(0, 0, 0);
+             /*background-color: #444444;*/
+             text-align: center;
+            
+           
+             background-image: url("images/logosmall.jpg");
+             background-repeat:no-repeat;
+           background-position-x:center;
+          
+            background-size:contain;
+}
+.topnav {
+             background-color: rgba(36, 153, 226, 0.5);
+             overflow: hidden;
+         }
+
+             
+             .topnav a {
+                 float: left;
+                 color: #f2f2f2;
+                 text-align: center;
+                 /*padding: 14px 16px;*/
+                 text-decoration: none;
+                 font-size: 17px;
+             }
+
+                
+                 .topnav a:hover {
+                     background-color: #ddd;
+                     color: black;
+                 }
+
+                
+                 .topnav a.active {
+                     background-color: #4CAF50;
+                     color: white;
+                 }
+
+.secondlayer {
+    background-color: rgb(84, 137, 221);
+    padding: 0;
+}
+         .topnav-right {
+             float: right;
+         }
+         .currentprojects {
+         	width: 220px;
+         	float: left;
+         	margin: :10px;
+         	height: 198px;
+         	background-image: url("images/blackimage.jpg");
+         	background-repeat: no-repeat;
+         	background-position: bottom;
+         }
+         figure {
+         	display: block;
+         	width: 220px;
+         	height: 170px;
+         	background-color: #e7e3d8;
+         	margin: 0px;
+         	padding: 9px;
+         	text-align: left;
+         }
+         figure img {
+         	width: 200px;
+         	height: 150px;
+         }
+         figcaption {
+         	background-image: url("images/blackimage.jpg") no-repeat;
+         	padding-left: 20px;
+         }
+         .mySlides {
+            
+            
+             height: 500px;
+             width: 100%;
+         }
+
+         .linktext {
+            font-family: "Courier New", Courier, "Times New Roman";
+         }
