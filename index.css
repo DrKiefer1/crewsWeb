@@ -1,7 +1,9 @@
 
 body {
 	background-color: rgb(255, 255, 255);
+    padding: 0;
 }
+
 .title {
 	
              font-family: Garamond, 'Times New Roman',Arial,Georgia;
@@ -20,6 +22,7 @@ body {
 .topnav {
              background-color: rgba(36, 153, 226, 0.5);
              overflow: hidden;
+             padding: 0;
          }
 
              
@@ -27,7 +30,7 @@ body {
                  float: left;
                  color: #f2f2f2;
                  text-align: center;
-                 /*padding: 14px 16px;*/
+                 padding: 14px 16px;*/
                  text-decoration: none;
                  font-size: 17px;
              }
@@ -44,25 +47,26 @@ body {
                      color: white;
                  }
 
+
 .secondlayer {
     background-color: rgb(84, 137, 221);
-    padding: 0;
+   /* padding: 0;*/
 }
          .topnav-right {
              float: right;
          }
          .currentprojects {
          	width: 220px;
-         	float: left;
+         	float: bottom;
          	margin: :10px;
          	height: 198px;
          	background-image: url("images/blackimage.jpg");
          	background-repeat: no-repeat;
-         	background-position: bottom;
+         	background-position: left;
          }
          figure {
          	display: block;
-         	width: 220px;
+         	width: 420px;
          	height: 170px;
          	background-color: #e7e3d8;
          	margin: 0px;
