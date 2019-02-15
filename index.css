@@ -104,6 +104,9 @@ body {
             font-family: "Courier New", Courier, "Times New Roman";
          }
          .aboutCSS {
-            margin: 50px;
-            padding: 50px;
+            display: inline;
+            margin: 0px;
+            padding: 100px;
+            width: 30%;
+            text-align: right;
          }
