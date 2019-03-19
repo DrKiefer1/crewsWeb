@@ -1,3 +1,4 @@
+/* @pjs preload="testimage.png"; */
 public class person {
   String name;  
   public String role;
@@ -6,7 +7,7 @@ public class person {
   int x, y;
   int lineX,  lineY;
   float angle;
-  PImage pic;
+  public PImage pic;
   public Boolean isLine;
   public int numOfLines;
   
@@ -19,8 +20,7 @@ public class person {
     this.y = y;
     this.angle = angle;
     this.pic = pic;
-    this.lineX = lineX;
-    this.lineY = lineY;
+    
   }
 
 
