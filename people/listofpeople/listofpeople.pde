@@ -53,10 +53,11 @@ void mousePressed() {
   }
 }
 void keyPressed() {
-  if (keyCode == ESC) {
+  if (keyCode == ' ') {
     // sizeUp = false;
     clear();
     createPersons();
+    redraw();
   }
 }
 void createPersons() {
