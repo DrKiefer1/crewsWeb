@@ -1,4 +1,4 @@
-/* @pjs preload="testimage.png"; */
+
 public class person {
   String name;  
   public String role;

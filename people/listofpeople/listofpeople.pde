@@ -1,4 +1,4 @@
-
+/* @pjs preload="testimage.png"; */
 person[] persons = new person[10];
 Boolean sizeUp = true;
 void setup() {
