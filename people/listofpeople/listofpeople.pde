@@ -53,7 +53,7 @@ void mousePressed() {
   }
 }
 void keyPressed() {
-  if (keyCode == ' ') {
+  if (keyCode == ESC) {
     // sizeUp = false;
     clear();
     createPersons();
