@@ -1,9 +1,10 @@
 /* @pjs preload="testimage.png"; */
-person[] persons = new person[10];
+person[] persons;
 Boolean sizeUp = true;
 void setup() {
+  persons =  new person[10];
   size(800, 800); 
-  
+
   persons[0] = new person("name", "roll", 0.1, 0.1, 375, 100, 10, loadImage("testimage.png")); //phil
   persons[1] = new person("name", "roll", 0.1, 0.1, 375 - 75, 200, 10, loadImage("testimage.png")); //erin
   persons[2] = new person("name", "roll", 0.1, 0.1, 375 + 75, 200, 10, loadImage("testimage.png")); //mitch
@@ -51,14 +52,13 @@ void mousePressed() {
         persons[i].y = 200;
         persons[i].xSize = 0.5; 
         persons[i].ySize = 0.5;
-      } 
+      }
     }
   }
 }
 void keyPressed() {
- if(keyCode == ESC) {
-  setup(); 
-  redraw();
- }
-  
+  if (keyCode == ESC) {
+    setup(); 
+    redraw();
+  }
 }
