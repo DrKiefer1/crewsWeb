@@ -1,9 +1,9 @@
 
-person[] persons;
+person[] persons = new person[10];
 Boolean sizeUp = true;
 void setup() {
   size(800, 800); 
-  persons = new person[10];
+  
   persons[0] = new person("name", "roll", 0.1, 0.1, 375, 100, 10, loadImage("testimage.png")); //phil
   persons[1] = new person("name", "roll", 0.1, 0.1, 375 - 75, 200, 10, loadImage("testimage.png")); //erin
   persons[2] = new person("name", "roll", 0.1, 0.1, 375 + 75, 200, 10, loadImage("testimage.png")); //mitch
@@ -61,39 +61,4 @@ void keyPressed() {
   redraw();
  }
   
-}
-public class person {
-  String name;  
-  public String role;
-  float xSize;
-  float ySize;
-  int x, y;
-  int lineX,  lineY;
-  float angle;
-  PImage pic;
-  public Boolean isLine;
-  public int numOfLines;
-  
-  person(String name, String role, float xSize, float ySize, int x, int y, float angle, PImage pic) {
-    this.name = name;
-    this.role = role;
-    this.xSize = xSize;
-    this.ySize = ySize;
-    this.x = x;
-    this.y = y;
-    this.angle = angle;
-    this.pic = pic;
-    this.lineX = lineX;
-    this.lineY = lineY;
-  }
-
-
-  void show() {
-    pushMatrix();
-    translate(x, y);
-    scale(xSize, ySize);
-    image(pic, xSize, ySize);
-    popMatrix();
-    
-  }
 }
