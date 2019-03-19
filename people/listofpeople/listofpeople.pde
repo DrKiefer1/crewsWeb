@@ -5,7 +5,7 @@ int a = 0;
 int b = 0;
 void setup() {
   persons =  new person[10];
-  
+
   size(800, 800);
   createPersons();
 }
@@ -49,16 +49,22 @@ void mousePressed() {
         persons[i].xSize = 0.5; 
         persons[i].ySize = 0.5;
       }
-    }
+    } 
+      //setu/p();
+     
+    }  
+      
   }
-}
+
 void keyPressed() {
-  if (keyCode == ' ') {
-    // sizeUp = false;
-    clear();
-    createPersons();
-    redraw();
-  }
+  createPersons();
+  
+  //if (keyCode == ' ') {
+  //  // sizeUp = false;
+  //  clear();
+  //  createPersons();
+  //  redraw();
+  //}
 }
 void createPersons() {
   persons[0] = new person("name", "roll", 0.1, 0.1, 375, 100, 10, loadImage("testimage.png")); //phil
