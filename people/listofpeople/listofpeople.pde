@@ -1,22 +1,16 @@
 /* @pjs preload="testimage.png"; */
 person[] persons;
 Boolean sizeUp = true;
+int a = 0;
+int b = 0;
 void setup() {
   persons =  new person[10];
-  size(800, 800); 
-
-  persons[0] = new person("name", "roll", 0.1, 0.1, 375, 100, 10, loadImage("testimage.png")); //phil
-  persons[1] = new person("name", "roll", 0.1, 0.1, 375 - 75, 200, 10, loadImage("testimage.png")); //erin
-  persons[2] = new person("name", "roll", 0.1, 0.1, 375 + 75, 200, 10, loadImage("testimage.png")); //mitch
-  persons[3] = new person("name", "roll", 0.1, 0.1, 375 - 225, 200, 10, loadImage("testimage.png")); //david
-  persons[4] = new person("name", "roll", 0.1, 0.1, 375, 300, 10, loadImage("testimage.png")); //alexis
-  persons[5] = new person("name", "roll", 0.1, 0.1, 375 - 200, 300, 10, loadImage("testimage.png")); //wendy
-  persons[6] = new person("name", "roll", 0.1, 0.1, 375 - 200, 400, 10, loadImage("testimage.png")); //elizabeth
-  persons[7] = new person("name", "roll", 0.1, 0.1, 375 - 125, 400, 10, loadImage("testimage.png")); //alyssa
-  persons[8] = new person("name", "roll", 0.1, 0.1, 375 - 300, 300, 10, loadImage("testimage.png")); //alex
-  persons[9] = new person("name", "roll", 0.1, 0.1, 375 + 150, 300, 10, loadImage("testimage.png")); //sam
+  
+  size(800, 800);
+  createPersons();
 }
 void draw() {
+  background(255);
   persons[0].show();
   persons[1].show();
   persons[2].show();
@@ -48,6 +42,8 @@ void mousePressed() {
   for (int i = 0; i < persons.length; i++) {
     if (sizeUp == true) {
       if (dist(persons[i].x, persons[i].y, mouseX, mouseY) < 50) {
+        a = persons[i].x;
+        b = persons[i].y;
         persons[i].x = 300;
         persons[i].y = 200;
         persons[i].xSize = 0.5; 
@@ -57,8 +53,21 @@ void mousePressed() {
   }
 }
 void keyPressed() {
-  if (keyCode == ESC) {
-    setup(); 
-    redraw();
+  if (keyCode == ' ') {
+    // sizeUp = false;
+    clear();
+    createPersons();
   }
+}
+void createPersons() {
+  persons[0] = new person("name", "roll", 0.1, 0.1, 375, 100, 10, loadImage("testimage.png")); //phil
+  persons[1] = new person("name", "roll", 0.1, 0.1, 375 - 75, 200, 10, loadImage("testimage.png")); //erin
+  persons[2] = new person("name", "roll", 0.1, 0.1, 375 + 75, 200, 10, loadImage("testimage.png")); //mitch
+  persons[3] = new person("name", "roll", 0.1, 0.1, 375 - 225, 200, 10, loadImage("testimage.png")); //david
+  persons[4] = new person("name", "roll", 0.1, 0.1, 375, 300, 10, loadImage("testimage.png")); //alexis
+  persons[5] = new person("name", "roll", 0.1, 0.1, 375 - 200, 300, 10, loadImage("testimage.png")); //wendy
+  persons[6] = new person("name", "roll", 0.1, 0.1, 375 - 200, 400, 10, loadImage("testimage.png")); //elizabeth
+  persons[7] = new person("name", "roll", 0.1, 0.1, 375 - 125, 400, 10, loadImage("testimage.png")); //alyssa
+  persons[8] = new person("name", "roll", 0.1, 0.1, 375 - 300, 300, 10, loadImage("testimage.png")); //alex
+  persons[9] = new person("name", "roll", 0.1, 0.1, 375 + 150, 300, 10, loadImage("testimage.png")); //sam
 }
