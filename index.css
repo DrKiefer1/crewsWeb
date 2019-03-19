@@ -119,3 +119,8 @@ p {
             width: 30%;
             text-align: right;
          }
+#content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

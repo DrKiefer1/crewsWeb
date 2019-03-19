@@ -58,6 +58,7 @@ void mousePressed() {
 void keyPressed() {
  if(keyCode == ESC) {
   setup(); 
+  redraw();
  }
   
 }
