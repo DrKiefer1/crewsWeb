@@ -1,4 +1,3 @@
-
 public class person {
   String name;  
   public String role;
