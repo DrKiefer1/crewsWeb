@@ -44,10 +44,11 @@ void mousePressed() {
       if (dist(persons[i].x, persons[i].y, mouseX, mouseY) < 50) {
         a = persons[i].x;
         b = persons[i].y;
-        persons[i].x = 300;
-        persons[i].y = 200;
-        persons[i].xSize = 0.5; 
-        persons[i].ySize = 0.5;
+        background(100);
+        persons[i].x = 150;
+        persons[i].y = 0;
+        persons[i].xSize = 1; 
+        persons[i].ySize = 1;
       }
     } 
       //setu/p();
