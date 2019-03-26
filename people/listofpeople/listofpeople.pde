@@ -1,4 +1,4 @@
-/* @pjs preload="testimage.png, imagesofpeople/phil.png"; */
+/* @pjs preload="testimage.png, phil.png"; */
 person[] persons;
 Boolean sizeUp = true;
 int a = 0;
@@ -93,7 +93,7 @@ void keyPressed() {
   //}
 }
 void createPersons() {
-  persons[0] = new person("name", "Phil Crews Ph.D. Principal Investigator University of California, Santa Cruz Department of Chemistry and Biochemistry ", 0.1, 0.1, 375, 100, 10, loadImage("imagesofpeople/phil.png")); //phil
+  persons[0] = new person("name", "Phil Crews Ph.D. Principal Investigator University of California, Santa Cruz Department of Chemistry and Biochemistry ", 0.1, 0.1, 375, 100, 10, loadImage("phil.png")); //phil
   persons[1] = new person("name", "role", 0.1, 0.1, 375 - 75, 200, 10, loadImage("testimage.png")); //erin
   persons[2] = new person("name", "role", 0.1, 0.1, 375 + 75, 200, 10, loadImage("testimage.png")); //mitch
   persons[3] = new person("name", "role", 0.1, 0.1, 375 - 225, 200, 10, loadImage("testimage.png")); //david
