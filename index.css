@@ -120,9 +120,12 @@ p {
             text-align: right;
          }
 .collab {
-   margin: 0 auto;
+   
 
             width: 40%;
             height: 50%;
             border: thin silver solid; 
+}
+.pde {
+    margin: 0 auto;
 }
