@@ -1,0 +1,102 @@
+<html>
+  <head>
+  	<link type="text/css" rel="stylesheet" href="="http://cdn.embedly.com/css/social.0babd5c6.css">
+  	<link rel="stylesheet" href="index.css">
+    <title>Crews Research Group</title>
+  </head>
+<body>
+	<div class="topnav">
+         <a href="index.html">Home</a>
+        <a href="projectpage.html">Publications</a>
+        <div class="title">
+        Crews Research Group
+        <div class="topnav-right">
+        <a href="collabs.html">Collaborations</a>
+        <a href="newabout.html">Members</a>
+        </div>
+    </div>
+ <!-- cacospongia mycofigiensis -->
+ 
+
+<div class="currentSponges">
+<figure><a href="http://www.marinespecies.org/porifera/porifera.php?p=taxdetails&id=165305"><img class = "cacospongia" src="images/cacospongia/1.jpg" alt = "sponge pic" style="width:100%"/>
+ <!--  <img class = "cacospongia" src="images/cacospongia/2.jpg" alt = "sponge pic" style="width:100%"/> -->
+  <img class = "cacospongia" src="images/cacospongia/3.jpg" alt = "sponge pic" style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/4.jpg" alt = "sponge pic"style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/5.jpg" alt = "sponge pic"style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/6.jpg" alt = "sponge pic"style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/7.jpg" alt = "sponge pic"style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/8.jpg" alt = "sponge pic"style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/9.jpg" alt = "sponge pic"style="width:100%"/>
+  <img class = "cacospongia" src="images/cacospongia/10.jpg" alt = "sponge pic"style="width:100%"/>
+<img class = "cacospongia" src="images/cacospongia/12.jpg" alt = "sponge pic"style="width:100%"/>
+<figcaption class="linktext">Cacospongia Mycofigiensis</figcaption>
+</figure>
+</div>
+<!-- jaspis coriacea -->
+<div class="currentSponges">
+<figure><a href="http://www.marinespecies.org/porifera/porifera.php?p=taxdetails&id=607718"> <img class = "coriacea" src="images/coriacea/1.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "coriacea"src="images/coriacea/2.jpg" alt = "worm_race"style="width:100%"/>
+  <!-- <img class = "coriacea"src="images/coriacea/3.jpg" alt = "worm_race"style="width:100%"/> -->
+  <img class = "coriacea"src="images/coriacea/4.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "coriacea"src="images/coriacea/5.jpg" alt = "worm_race"style="width:100%"/>
+<figcaption class="linktext">Jaspis Coriacea</figcaption>
+
+</figure>
+</div>
+<!-- jaspis splendens -->
+<div class="currentSponges">
+<figure><a href="http://www.marinespecies.org/aphia.php?p=taxdetails&id=169842"> 
+  <img class = "splendens" src="images/splendens/1.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "splendens"src="images/splendens/2.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "splendens"src="images/splendens/3.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "splendens"src="images/splendens/4.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "splendens"src="images/splendens/5.jpg" alt = "worm_race"style="width:100%"/>
+  <img class = "splendens"src="images/splendens/6.jpg" alt = "worm_race"style="width:100%"/>
+  <!-- <img class = "splendens"src="images/splendens/7.jpg" alt = "worm_race"style="width:100%"/> -->
+  <img class = "splendens"src="images/splendens/8.jpg" alt = "worm_race"style="width:100%"/>
+<figcaption class="linktext">Jaspis Splendens</figcaption>
+
+</figure>
+</div>
+
+
+ <script>
+            
+         var slideIndex = 0;
+         var slideIndex2 = 0;
+         var slideIndex3 = 0;
+         automatic();
+
+         function automatic() {
+             var i;
+             var caco = document.getElementsByClassName("cacospongia");
+             var cori = document.getElementsByClassName("coriacea");
+             var sple = document.getElementsByClassName("splendens");
+             for (i = 0; i < caco.length; i++) {
+                 caco[i].style.display = "none";
+             }
+              for (i = 0; i < cori.length; i++) {
+                 cori[i].style.display = "none";
+             }
+             for (i = 0; i < sple.length; i++) {
+                 sple[i].style.display = "none";
+             }
+             slideIndex++;
+             slideIndex2++;
+             slideIndex3++;
+             if (slideIndex > caco.length) { slideIndex = 1 }
+             caco[slideIndex - 1].style.display = "block";
+              
+            if (slideIndex2 > cori.length) { slideIndex2 = 1 }
+              cori[slideIndex2 - 1].style.display = "block";
+             
+            if (slideIndex3 > sple.length) { slideIndex3 = 1 }
+             sple[slideIndex3 - 1].style.display = "block";
+
+             setTimeout(automatic, 2000); // Change image every 2 seconds
+         }
+    //This code will run after your page loads
+        </script>
+</body>
+</html>

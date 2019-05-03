@@ -1,7 +1,7 @@
 
 body {
 	background-color: lightblue;
-    
+    /*background-image: url("images/jasplakinolide.png");*/
 }
 p {
    
@@ -24,7 +24,8 @@ p {
 .topnav {
              background-color: #2499e2;
              overflow: hidden;
-             padding: 0;
+             width: 90%;
+             margin: 0 auto;
          }
 
              
@@ -52,7 +53,15 @@ p {
 
 .secondlayer {
     background-color: #2499e2;
+    margin: 0 auto;
+    width:90%;
+    font-size: 36px;
    /* padding: 0;*/
+}
+.footer {
+     background-color: #2499e2;
+    margin: 0 auto;
+    width:90%;
 }
          .topnav-right {
              float: right;
@@ -70,6 +79,12 @@ p {
             font-size: smaller;
             text-indent: 0;*/
          }
+         .currentSponges {
+               margin: 0 auto;
+            width: 700px;
+            height: 700px;
+         }
+
          figure {
 
             align-items: center;
@@ -95,8 +110,8 @@ p {
          .mySlides {
             
             margin: 0 auto;
-             height: 50%;
-             width: 50%;
+             height: 10%;
+             width: 10%;
          }
 
          .linktext {
@@ -122,7 +137,8 @@ p {
 .collab {
    
             margin: 0 auto;
-            width: 40%;
-            height: 50%;
+            width: 755px;
+            height: 500%;
             border: thin silver solid; 
+
 }

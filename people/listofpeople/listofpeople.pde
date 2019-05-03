@@ -81,9 +81,13 @@ void mousePressed() {
 }
 
 void keyPressed() {
-  createPersons();
+  
+  
   fillcolor = 255;
-  createBackground = false;
+  //createBackground = false;
+  
+ 
+  createPersons();
   lineTrue = true;
   //if (keyCode == ' ') {
   //  // sizeUp = false;
