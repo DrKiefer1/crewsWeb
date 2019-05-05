@@ -55,7 +55,7 @@ p {
     background-color: #2499e2;
     margin: 0 auto;
     width:90%;
-    font-size: 36px;
+    font-size: 18px;
    /* padding: 0;*/
 }
 .footer {
@@ -80,9 +80,10 @@ p {
             text-indent: 0;*/
          }
          .currentSponges {
-               margin: 0 auto;
-            width: 700px;
-            height: 700px;
+
+          /*  display: inline-block;
+            width: 300px;
+            height: 300px;*/
          }
 
          figure {
@@ -107,12 +108,7 @@ p {
          	background-image: url("images/blackimage.jpg") no-repeat;
          	/*padding-left: 20px;*/
          }
-         .mySlides {
-            
-            margin: 0 auto;
-             height: 10%;
-             width: 10%;
-         }
+         
 
          .linktext {
             font-family: "Courier New", Courier, "Times New Roman";
@@ -142,3 +138,46 @@ p {
             border: thin silver solid; 
 
 }
+.pde {
+ margin: 0 auto;
+    }
+  .figsponge {
+            display: block;
+            width: 720px;
+            height: 370px;
+            background-color: #e7e3d8;
+            margin: 0 auto;
+            padding: 9px;
+            text-align: left;
+         }
+}
+.cacospongia {
+        width: 420px;
+        height: 370px;
+}
+.coriacea {
+         width: 420px;
+            height: 370px;
+}
+.splendens {
+         width: 420px;
+            height: 370px;
+}
+.psam {
+    width: 420px;
+            height: 370px;
+}
+.theo {
+    width: 420px;
+            height: 370px;
+}
+.clav {
+    width: 420px;
+            height: 370px;
+}
+.mySlides {
+            
+            margin: 0 auto;
+            width: 720px;
+            height: 360px
+         }
