@@ -178,6 +178,18 @@ p {
 .mySlides {
             
             margin: 0 auto;
-            width: 720px;
-            height: 360px
+            width: 800px;
+            height: 480px
          }
+.inprogress {
+    display: block;
+     margin: 0 auto;
+
+}
+.sorry {
+     
+    margin: 0 auto;
+    width:90%;
+    font-size: 18px;
+    text-align: center;
+}
