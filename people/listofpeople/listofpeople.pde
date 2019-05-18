@@ -1,4 +1,4 @@
-/* @pjs preload="testimage.png, phil.png", mitch.png, david.png; */
+/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png; */
 person[] persons;
 Boolean sizeUp = true;
 int a = 0;
@@ -47,12 +47,12 @@ void createLines() {
   line(400, 163, 475, 200); //phil to mitch
   line(475, 268, 550, 300); //mitch to sam
   line(475, 268, 400, 300); //mitch to alexis
-  line(325, 200, 400, 300); //erin to alexis
-  line(325, 225, 200, 225); //erin to david
-  line(337.5, 200, 200, 300); //erin to wendy
-  line(325, 250, 200, 400); //erin to elizabeth
-  line(325, 250, 275, 400); //erin to alyssa
-  line(325, 250, 100, 300); //erin to alex
+  line(350, 268, 400, 300); //erin to alexis
+  line(300, 225, 200, 225); //erin to david
+  line(300, 268, 200, 300); //erin to wendy
+  line(300, 268, 200, 400); //erin to elizabeth
+  line(300, 268, 275, 400); //erin to alyssa
+  line(300, 268, 100, 300); //erin to alex
 }
 
 void mousePressed() {
@@ -102,7 +102,7 @@ void keyPressed() {
 }
 void createPersons() {
   persons[0] = new person("name", "Phil Crews Ph.D. Principal Investigator University of California, Santa Cruz Department of Chemistry and Biochemistry ", 0.1, 0.1, 375, 100, 10, loadImage("phil.png")); //phil
-  persons[1] = new person("name", "role", 0.1, 0.1, 375 - 75, 200, 10, loadImage("testimage.png")); //erin
+  persons[1] = new person("name", "role", 0.1, 0.1, 375 - 75, 200, 10, loadImage("erin.png")); //erin
   persons[2] = new person("Mitch Crews", "Mitch Crews\n\nResearch Scientist", 0.1, 0.1, 375 + 75, 200, 10, loadImage("mitch.png")); //mitch
   persons[3] = new person("David Coppage", "David Coppage\n\nPostbac Scientist", 0.1, 0.1, 375 - 225, 200, 10, loadImage("david.png")); //david
   persons[4] = new person("name", "role", 0.1, 0.1, 375, 300, 10, loadImage("testimage.png")); //alexis
