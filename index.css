@@ -140,6 +140,13 @@ p {
 }
 .pde {
  margin: 0 auto;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
     }
   .figsponge {
             display: block;
@@ -192,4 +199,12 @@ p {
     width:90%;
     font-size: 18px;
     text-align: center;
+}
+.history {
+    float: right;
+    padding-right: 450px;
+}
+.tutorial {
+float: left;
+    padding-left: 300px;
 }
