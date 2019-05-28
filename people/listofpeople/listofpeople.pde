@@ -1,9 +1,9 @@
-/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png; */
+/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png; */
 person[] persons;
 Boolean sizeUp = true;
 int a = 0;
 int b = 0;
-int fillcolor = 255;
+int fillcolor = #056A76;
 Boolean createBackground = false;
 Boolean lineTrue = true;
 String role = " ";
@@ -12,24 +12,19 @@ void setup() {
   persons =  new person[10];
 
   size(800, 800);
+  background(fillcolor);
   createPersons();
 }
 void draw() {
   background(fillcolor);
-  
-  //createLines();
-  // if(createBackground == true) {
-  //  fill(fillcolor);
 
-  //} else {
   createBackgroundColor(role);
-  if(lineTrue == true) {
-  createLines();
-  
+  if (lineTrue == true) {
+    createLines();
   }
   showFace();
-  //}
-  //
+
+  cursor(HAND);
 }
 
 void createLines() {
@@ -43,26 +38,28 @@ void createLines() {
   persons[7].show();
   persons[8].show();
   persons[9].show();
+
   line(400, 163, 325, 200); //phil to erin
   line(400, 163, 475, 200); //phil to mitch
   line(475, 268, 550, 300); //mitch to sam
   line(475, 268, 400, 300); //mitch to alexis
   line(350, 268, 400, 300); //erin to alexis
   line(300, 225, 200, 225); //erin to david
-  line(300, 268, 200, 300); //erin to wendy
+  line(300, 268, 200, 300); //erin to connie
   line(300, 268, 200, 400); //erin to elizabeth
   line(300, 268, 275, 400); //erin to alyssa
   line(300, 268, 100, 300); //erin to alex
 }
 
 void mousePressed() {
- // println (mouseX +"," + mouseY);
+  println (mouseX +"," + mouseY);
   for (int i = 0; i < persons.length; i++) {
     if (sizeUp == true) {
-      if (dist(persons[i].x, persons[i].y, mouseX, mouseY) < 50) {
+      if (dist(persons[i].x + 30, persons[i].y + 30, mouseX, mouseY) < 30) {
+        //  cursor(HAND);
         a = persons[i].x;
         b = persons[i].y;
-        fillcolor = 100;
+       // fillcolor = 100;
         background(fillcolor);
 
         persons[i].x = 150;
@@ -71,26 +68,23 @@ void mousePressed() {
         persons[i].ySize = 1;
         createBackground = true;
         role = persons[i].role;
-        
+
         lineTrue = false;
         pos = i;
-        
       }
     } 
     //setu/p();
-  }  
-  
+  }
 }
 void mouseClicked() {
-  
 }
 void keyPressed() {
-  
-  
-  fillcolor = 255;
+
+
+  //fillcolor = 255;
   //createBackground = false;
-  
- 
+
+
   createPersons();
   lineTrue = true;
   //if (keyCode == ' ') {
@@ -105,18 +99,18 @@ void createPersons() {
   persons[1] = new person("name", "Erin McCauley\nPostdoctoral Fellow", 0.1, 0.1, 375 - 75, 200, 10, loadImage("erin.png")); //erin
   persons[2] = new person("Mitch Crews", "Mitch Crews\nResearch Scientist", 0.1, 0.1, 375 + 75, 200, 10, loadImage("mitch.png")); //mitch
   persons[3] = new person("David Coppage", "David Coppage\nPostbacclaureate Fellow\nJunior Research Specialist", 0.1, 0.1, 375 - 225, 200, 10, loadImage("david.png")); //david
-  persons[4] = new person("name", "role", 0.1, 0.1, 375, 300, 10, loadImage("testimage.png")); //alexis
-  persons[5] = new person("name", "role", 0.1, 0.1, 375 - 200, 300, 10, loadImage("testimage.png")); //wendy
+  persons[4] = new person("name", "Alexis Munoz\nUndergraduate Researcher", 0.1, 0.1, 375, 300, 10, loadImage("testimage.png")); //alexis
+  persons[5] = new person("name", "Connie Silva\nUndergraduate Researcher", 0.1, 0.1, 375 - 200, 300, 10, loadImage("testimage.png")); //connie
   persons[6] = new person("name", "role", 0.1, 0.1, 375 - 200, 400, 10, loadImage("testimage.png")); //elizabeth
   persons[7] = new person("name", "role", 0.1, 0.1, 375 - 125, 400, 10, loadImage("testimage.png")); //alyssa
   persons[8] = new person("name", "role", 0.1, 0.1, 375 - 300, 300, 10, loadImage("testimage.png")); //alex
-  persons[9] = new person("name", "role", 0.1, 0.1, 375 + 150, 300, 10, loadImage("testimage.png")); //sam
+  persons[9] = new person("Sam Mussetter", "Sam Mussetter\nVolunteer", 0.1, 0.1, 375 + 150, 300, 10, loadImage("sam.png")); //sam
 }
 
 void createBackgroundColor(String role) {
   if (createBackground == true) {
     pushMatrix();
-    
+
     textSize(12);
     fill(255);
     text(role, width/2.5 + 50, 700, 200, 300);
