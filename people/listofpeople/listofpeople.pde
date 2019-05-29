@@ -1,4 +1,4 @@
-/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png, connine.png, alexis.png, alyssa.png, elizabeth.png; */
+/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png, connie.png, alexis.png, alyssa.png, elizabeth.png; */
 person[] persons;
 Boolean sizeUp = true;
 int a = 0;
