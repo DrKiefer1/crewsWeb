@@ -1,4 +1,4 @@
-/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png, connine.png, alexis.png; */
+/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png, connine.png, alexis.png, alyssa.png, elizabeth.png; */
 person[] persons;
 Boolean sizeUp = true;
 int a = 0;
@@ -59,7 +59,7 @@ void mousePressed() {
         //  cursor(HAND);
         a = persons[i].x;
         b = persons[i].y;
-       // fillcolor = 100;
+        // fillcolor = 100;
         background(fillcolor);
 
         persons[i].x = 150;
