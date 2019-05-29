@@ -1,4 +1,4 @@
-/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png; */
+/* @pjs preload="testimage.png, phil.png", mitch.png, david.png, erin.png, alex.png, sam.png, connine.png, alexis.png; */
 person[] persons;
 Boolean sizeUp = true;
 int a = 0;
@@ -99,11 +99,11 @@ void createPersons() {
   persons[1] = new person("name", "Erin McCauley\nPostdoctoral Fellow", 0.1, 0.1, 375 - 75, 200, 10, loadImage("erin.png")); //erin
   persons[2] = new person("Mitch Crews", "Mitch Crews\nResearch Scientist", 0.1, 0.1, 375 + 75, 200, 10, loadImage("mitch.png")); //mitch
   persons[3] = new person("David Coppage", "David Coppage\nPostbacclaureate Fellow\nJunior Research Specialist", 0.1, 0.1, 375 - 225, 200, 10, loadImage("david.png")); //david
-  persons[4] = new person("name", "Alexis Munoz\nUndergraduate Researcher", 0.1, 0.1, 375, 300, 10, loadImage("testimage.png")); //alexis
-  persons[5] = new person("name", "Connie Silva\nUndergraduate Researcher", 0.1, 0.1, 375 - 200, 300, 10, loadImage("testimage.png")); //connie
-  persons[6] = new person("name", "role", 0.1, 0.1, 375 - 200, 400, 10, loadImage("testimage.png")); //elizabeth
-  persons[7] = new person("name", "role", 0.1, 0.1, 375 - 125, 400, 10, loadImage("testimage.png")); //alyssa
-  persons[8] = new person("name", "role", 0.1, 0.1, 375 - 300, 300, 10, loadImage("testimage.png")); //alex
+  persons[4] = new person("name", "Alexis Munoz\nUndergraduate Researcher", 0.1, 0.1, 375, 300, 10, loadImage("alexis.png")); //alexis
+  persons[5] = new person("name", "Connie Silva\nUndergraduate Researcher", 0.1, 0.1, 375 - 200, 300, 10, loadImage("connie.png")); //connie
+  persons[6] = new person("name", "Elizabeth Normand\nPostbacclaureate", 0.1, 0.1, 375 - 200, 400, 10, loadImage("elizabeth.png")); //elizabeth
+  persons[7] = new person("name", "Alyssa Thompson\nUndergraduate Researcher", 0.1, 0.1, 375 - 125, 400, 10, loadImage("alyssa.png")); //alyssa
+  persons[8] = new person("name", "Alexandra Borowy\nUndergraduate Researcher", 0.1, 0.1, 375 - 300, 300, 10, loadImage("alex.png")); //alex
   persons[9] = new person("Sam Mussetter", "Sam Mussetter\nVolunteer", 0.1, 0.1, 375 + 150, 300, 10, loadImage("sam.png")); //sam
 }
 
