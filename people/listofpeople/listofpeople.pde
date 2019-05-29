@@ -52,7 +52,7 @@ void createLines() {
 }
 
 void mousePressed() {
-  println (mouseX +"," + mouseY);
+  
   for (int i = 0; i < persons.length; i++) {
     if (sizeUp == true) {
       if (dist(persons[i].x + 30, persons[i].y + 30, mouseX, mouseY) < 30) {
