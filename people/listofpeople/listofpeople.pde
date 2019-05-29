@@ -12,11 +12,11 @@ void setup() {
   persons =  new person[10];
 
   size(800, 800);
-  background(fillcolor);
+  background(#056A76);
   createPersons();
 }
 void draw() {
-  background(fillcolor);
+  background(#056A76);
 
   createBackgroundColor(role);
   if (lineTrue == true) {
@@ -60,7 +60,7 @@ void mousePressed() {
         a = persons[i].x;
         b = persons[i].y;
         // fillcolor = 100;
-        background(fillcolor);
+       // background(100);
 
         persons[i].x = 150;
         persons[i].y = 0;
@@ -81,12 +81,15 @@ void mouseClicked() {
 void keyPressed() {
 
 
-  //fillcolor = 255;
-  //createBackground = false;
 
+  
+
+  
 
   createPersons();
   lineTrue = true;
+  background(#056A76);
+  createBackground = false;
   //if (keyCode == ' ') {
   //  // sizeUp = false;
   //  clear();
@@ -95,6 +98,7 @@ void keyPressed() {
   //}
 }
 void createPersons() {
+
   persons[0] = new person("name", "Phil Crews Ph.D. Principal Investigator University of California, Santa Cruz Department of Chemistry and Biochemistry ", 0.1, 0.1, 375, 100, 10, loadImage("phil.png")); //phil
   persons[1] = new person("name", "Erin McCauley\nPostdoctoral Fellow", 0.1, 0.1, 375 - 75, 200, 10, loadImage("erin.png")); //erin
   persons[2] = new person("Mitch Crews", "Mitch Crews\nResearch Scientist", 0.1, 0.1, 375 + 75, 200, 10, loadImage("mitch.png")); //mitch
@@ -115,8 +119,10 @@ void createBackgroundColor(String role) {
     fill(255);
     text(role, width/2.5 + 50, 700, 200, 300);
     popMatrix();
+  } else {
+  
+  background(#056A76);
   }
-  // background(fillcolor);
 }
 void showFace() {
   persons[pos].show();
